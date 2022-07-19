@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Gerador de Senha</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='script.js'></script>
-</head>
-<body>
-    <section>
-        <div id="box_area">
-            <div class="input-box">
-                <h2>Gerador de Senha</h2>
-                    <input type="text" placeholder="Gerar senha" id="password" readonly=""/>
-                    <div id="btn_make" onclick="getPassword()">Gerar Senha</div>
-                    <div id="btn_del" onclick="resetBtn()">Limpar</div>
-                    <div id="btn_copy" onclick="copyPass()">Copiar Senha</div>
-            </div>
-        </div>
-        <span class="ver">Versão 0.1.0</span>
-    </section>
+<header>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Gerador de Senha</title>
     
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <script src='js/script.js'></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    </head>
+</header>
+
+<body>
+    <main>
+        <section>
+            <h3>Gerador de Senha</h3>
+            <div id="box_area">
+                <div class="input-box">
+                        <input type="text" placeholder="" id="password" readonly=""/>
+
+                        <button class="btn waves-effect waves-light" onclick="getPassword()" type="submit" name="action">Gerar
+                            <i class="material-icons right"></i>
+                          </button>
+                        <!--<div id="btn_make" onclick="getPassword()">Gerar Senha</div>-->
+                        <button class="btn waves-effect waves-light" onclick="resetBtn()" type="submit" name="action">Limpar
+                            <i class="material-icons right"></i>
+                          </button>
+                        <!--<div id="btn_del" onclick="resetBtn()">Limpar</div>-->
+                        <button class="btn waves-effect waves-light" onclick="copyPass()" type="submit" name="action">Copiar
+                            <i class="material-icons"></i>
+                          </button>
+                        <!--<div id="btn_copy" onclick="copyPass()">Copiar Senha</div>-->
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+<footer>
+    <p>
+        Sistema simples para gerar senhas fortes.
+    </p>
+    <span>[Feito Por Matheus]</span>
+    <span> / </span>
+    <span>[Versão 0.1.0]</span>
+</footer>
 </html>
