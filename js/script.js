@@ -7,7 +7,7 @@
 function getPassword(){
 
     var caracteres = "áéóúíÁÉÍÓÚãõâêôû0123456789abcdefghijklmnopqrstuvxzkABCDEFGHIJKLMNOPQRSTUVXZ!@#$%¨&*()-_+=|'´`[]{}ç,.;:<>/?^~";
-    var passwordLenght = 16;
+    var passwordLenght = 24;
     var password = "";
 
     for(var i=0; i< passwordLenght; i++){
